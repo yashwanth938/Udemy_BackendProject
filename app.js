@@ -8,11 +8,14 @@ app.get("/",(req,res)=>{
     res.send("Hello world");
 });
 
+
 //connection and PORT
 mongoose.connect(
+    "mongodb+srv://yashrongala:<password>@rongalas.cnexybn.mongodb.net/?retryWrites=true&w=majority"
     {
+        
         UseNewUrlParser:true,
-        useUnifiedTopology:true
+        useUnifiedTopology:true,
     }
 ).then(()=>{
     console.log("connected to database");
