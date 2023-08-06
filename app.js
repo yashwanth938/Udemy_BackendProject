@@ -11,11 +11,7 @@ app.use('/products',router);
 //connection and PORT
 mongoose.connect(
     "mongodb+srv://yashrongala:4WPONqYUtTv6y2l1@rongalas.cnexybn.mongodb.net/?retryWrites=true&w=majority",
-    {
-        
-        UseNewUrlParser:true,
-        useUnifiedTopology:true
-    }
+   
 ).then(()=>{
     console.log("connected to database");
 }).catch(err=>{

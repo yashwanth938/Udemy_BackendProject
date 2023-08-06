@@ -1,9 +1,9 @@
 const express = require('express');
-const product=require("../Model/Product");
+const Product=require("../Model/Product");
 const router = express.Router();
 
 router.get("/",async(req,res,next)=> {
-    let product = await product.find();
+    let products = await Product.find();
 
     if(!products){
         return res.status(404).json({message:'No products'})
