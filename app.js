@@ -9,3 +9,18 @@ app.get("/",(req,res)=>{
 });
 
 
+//connection and PORT
+mongoose.connect(
+    "mongodb+srv://yashrongala:<password>@rongalas.cnexybn.mongodb.net/?retryWrites=true&w=majority"
+    {
+        
+        UseNewUrlParser:true,
+        useUnifiedTopology:true
+    }
+).then(()=>{
+    console.log("connected to database");
+}).catch(err=>{
+    console.log(err);
+});
+
+app.listen(5000);
