@@ -1,12 +1,11 @@
 //import statements 
 const express = require('express');
 const mongoose= require('mongoose');
+const router = require('./routes/product-routs');
 //Middlewares
 const app = express();
 //routs
-app.get("/",(req,res)=>{
-    res.send("Hello world");
-});
+app.use('/products',router);
 
 
 //connection and PORT

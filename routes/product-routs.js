@@ -1,6 +1,6 @@
 const express = require('express');
 const product=require("../Model/Product");
-const router = express.router();
+const router = express.Router();
 
 router.get("/",async(req,res,next)=> {
     let product = await product.find();
@@ -12,7 +12,6 @@ router.get("/",async(req,res,next)=> {
 });
 
 module.exports = router;
-
 
 
 
