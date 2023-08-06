@@ -10,7 +10,9 @@ app.get("/",(req,res)=>{
 
 //connection and PORT
 mongoose.connect(
+    "mongodb+srv://yashrongala:<password>@rongalas.cnexybn.mongodb.net/?retryWrites=true&w=majority"
     {
+        
         UseNewUrlParser:true,
         useUnifiedTopology:true
     }
