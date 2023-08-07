@@ -4,6 +4,7 @@ const mongoose= require('mongoose');
 const router = require('./routes/product-routs');
 //Middlewares
 const app = express();
+app.use(express.json());
 //routs
 app.use('/products',router);
 
